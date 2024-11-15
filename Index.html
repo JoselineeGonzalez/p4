@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el más precioso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="inicio">
+        <h1>Aquí comienza todo.</h1>
+        <p>Haz click en el botón de abajo para ir a la siguiente página. 🤫</p>
+        <button onclick="irASiguientePagina()">Ir a la página.</button>
+    </div>
+
+    <!-- Mostrar el GIF solo en la página de inicio -->
+    <div id="gif-inicio" style="text-align:center;">
+        <img src="gato.gif" alt="GIF de gato" id="mi-gif" />
+    </div>
+
+    <div id="pagina-botones" style="display: none;">
+        <h1>Busca en cada botón. (^・ω・^ )</h1>
+        <div id="botones"></div>
+        <button onclick="volverInicio()">Volver al inicio</button>
+    </div>
+
+    <div id="libro" style="display: none;">
+        <div class="pagina">
+            <img id="pagina-imagen" src="" alt="Dibujo digital">
+        </div>
+        <button onclick="volverBotones()">Volver</button>
+    </div>
+
+    <div id="carta" style="display: none;">
+        <h1>Mi amor 💌</h1>
+
+        <!-- Coloca el audio con el mensaje arriba del contenido de la carta -->
+        <p><strong>Escucha la canción mientras lees:</strong></p>
+        <audio id="musica" controls>
+            <source src="sparks.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+
+        <p>
+            Hoy cumplimos tres meses y siento que cada día a tu lado ha sido una ola de emociones y momentos compartidos que solo tú y yo entendemos, es como si desde el primer día que empezamos a conocernos, se hubiera encendido una luz en mi vida que no ha dejado de brillar. Esa chispa que se encendió entre nosotros sigue iluminando cada rincón de mi corazón, haciéndome sentir que siempre estás aquí, incluso en la distancia o en los días difíciles.
+
+            A veces, se me vienen a la mente todos esos momentos en los que me has hecho sonreír sin siquiera intentarlo. Me encanta la increíble manera con la que logras hacerme sentir segura, amada, y, sobre todo, comprendida, como si supieras siempre lo que necesito, incluso antes de que lo diga. 
+            
+            Sé que no siempre es fácil, que a veces la vida nos pone pruebas que parecen más grandes de lo que podemos manejar, pero contigo siento que todo es posible. Me haces creer que pase lo que pase, siempre encontraré en ti esa paz que necesito. Y aunque el mundo se desmoronara, sé que estarías a mi lado, como has estado estos tres meses, sin dejarme caer, sin dejarme sola.
+
+            Sabes, cada vez que pienso en ti, en nosotros, siento que todo lo que ha pasado en mi vida me ha llevado a este preciso instante, donde todo parece tener sentido. Y si alguna vez has dudado de lo importante que eres para mí, déjame decirte que eres esa persona por la que cruzaría cualquier obstáculo, porque estar contigo vale la pena cada esfuerzo, cada lucha.
+
+            Te amo con una gran intensidad, te amo por cómo me haces sentir, pero, sobre todo, te amo por quién eres, con tus imperfecciones, tus miedos, tus sueños. Eres todo lo que siempre quise. Y aunque no pueda prometer que siempre será perfecto, sí puedo prometerte que estaré aquí, para ti, para nosotros, siempre.
+
+            Gracias por ser esa luz en la oscuridad que me guía, ese amor que me hace querer ser mejor. Me encanta cómo, incluso en los días más grises, logras traer de vuelta el color a mi vida, como esa chispa que nunca se apaga, que sigue brillando más fuerte cada día. Tres meses contigo han sido todo lo que soñé y más. 
+
+            Sé que hay momentos en los que quizás no siempre lo digo, pero por dentro estoy pensando en ti, en lo afortunada que soy de tenerte. Solo quiero agradecerte por cada pequeño detalle, por cada palabra de aliento. Estar contigo me ha enseñado tanto, y no puedo esperar para ver todo lo que nos espera juntos.
+
+            Cada instante contigo, cada recuerdo que construimos me recuerda lo hermoso que es amar a alguien con tanta profundidad, y también lo hermoso que es ser amada por ti. Gracias por estos tres meses, mi amor, gracias por ser mi confidente, mi apoyo, mi alegría, y sobre todo, por ser tú. Lo único que deseo es seguir caminando contigo, sin importar lo que venga, porque sé que juntos, vamos a lograr todo.
+
+            Te amo con toda mi alma. 💕
+        </p>
+
+        <button onclick="volverBotones()">Volver</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
